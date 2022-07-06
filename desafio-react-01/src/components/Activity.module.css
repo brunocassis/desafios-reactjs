@@ -1,0 +1,47 @@
+.todoList {
+  width: 100%;
+
+  background: var(--gray-500);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+
+  line-height: 1.4;
+
+  border: 1px solid var(--gray-400);
+  color: var(--gray-100);
+}
+
+.todoList + .todoList {
+  margin-top: 0.75rem;
+}
+
+.todoList button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-500);
+  cursor: pointer;
+  line-height: 0;
+}
+
+.todoList button:first-child svg {
+  color: var(--blue-200);
+}
+
+.todoList button svg {
+  color: var(--gray-300);
+}
+
+.todoList button:last-child svg:hover {
+  color: var(--red-500);
+}
+
+.checkedActivity {
+  text-decoration-line: line-through;
+  color: var(--gray-300);
+}
